@@ -1,0 +1,18 @@
+{
+  "name": "discord-fluxer-bridge",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "start": "node --env-file=.env bot.mjs",
+    "test": "node --test test.mjs",
+    "retry-failed": "node --env-file=.env bot.mjs --retry-failed"
+  },
+  "dependencies": {
+    "@fluxerjs/core": "^3.2.0",
+    "discord.js": "^14.22.1"
+  }
+}
